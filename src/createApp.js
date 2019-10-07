@@ -21,6 +21,9 @@ export default function createApp() {
   const io = socket(server);
 
   io.on("connection", socket => {
+    socket.on("SEND_GET", () => {
+      io.emit("RECEIVE_STATE", counter.count);
+    });
     socket.on("SEND_ADD", () => {
       counter.add();
       io.emit("RECEIVE_STATE", counter.count);
