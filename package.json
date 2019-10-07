@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "faker's server",
+  "main": "index.js",
+  "author": "scenarioart",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec yarn babel-node -- src --source-maps"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.18.0"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.2.7",
+    "nodemon": "^1.19.1",
+    "socket.io": "^2.2.0",
+    "ws": "^7.0.1"
+  }
+}
